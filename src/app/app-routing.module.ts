@@ -5,14 +5,17 @@ import { OverviewComponent } from './component/overview/overview.component';
 import { RegisterComponent } from './component/register/register.component';
 import { ContactComponent } from './component/contact/contact.component';
 import { FAQComponent } from './component/faq/faq.component';
+import { LeaseOptionComponent } from './component/lease-option/lease-option.component';
+
 
 const routes: Routes = [
-  {path: '', redirectTo:'login',pathMatch:'full'},
+  {path: '', redirectTo:'lease-option',pathMatch:'full'},
   {path:'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
   {path: 'overview', component: OverviewComponent},
   {path: 'contact', component: ContactComponent},
-  {path: 'FAQ', component: FAQComponent}
+  {path: 'FAQ', component: FAQComponent},
+  {path: 'lease-option', component: LeaseOptionComponent}
 
 ];
 

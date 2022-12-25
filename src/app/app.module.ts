@@ -11,6 +11,8 @@ import { OverviewComponent } from './component/overview/overview.component';
 import { FormsModule } from '@angular/forms';
 import { ContactComponent } from './component/contact/contact.component';
 import { FAQComponent } from './component/faq/faq.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +20,8 @@ import { FAQComponent } from './component/faq/faq.component';
     RegisterComponent,
     OverviewComponent,
     ContactComponent,
-    FAQComponent
+    FAQComponent,
+    
   ],
   imports: [
     BrowserModule,
