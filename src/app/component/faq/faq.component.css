@@ -1,69 +1,82 @@
-body{
-    font-family: 'Work Sans', sans-serif;
-}
-
-.faq-heading{
-    border-bottom: #777;
-    padding: 20px 60px;
-}
-
-.faq-container{
-display: flex;
-justify-content: center;
-flex-direction: column;
-
-}
-.hr-line{
-  width: 60%;
-  margin: auto;
+body {
+    font-family: Sans-serif;
+    font-size: 18px;
+    background:#eaeaea;
+  }
   
-}
-/* Style the buttons that are used to open and close the faq-page body */
-.faq-page {
-    /* background-color: #eee; */
-    color: #444;
+  .content {
+    width: 80%;
+    padding: 0;
+    margin: 0 auto;
+  }
+  
+  .centerplease {
+    margin: 0 auto;
+    max-width: 270px;
+    font-size: 40px;
+  }
+  
+  /*Question*/
+  .question {
+    position: relative;
+    background: #f9f9f9;
+    margin: 0;
+    padding: 10px 10px 10px 50px;
+    display: block;
+    width:100%;
     cursor: pointer;
-    padding: 30px 20px;
-    width: 60%;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-    margin: auto;
-
-}
-.faq-body{
-    margin: auto;
-    /* text-align: center; */
-   width: 50%; 
-   padding: auto;
-   
-}
-
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active,
-.faq-page:hover {
-    background-color: #F9F9F9;
-}
-
-/* Style the faq-page panel. Note: hidden by default */
-.faq-body {
-    padding: 0 18px;
-    background-color: white;
-    display: none;
+  }
+  /*Answer*/
+  .answers {
+    padding: 0px 15px;
+    margin: 5px 0;
+    width:100%!important;
+    height: 0;
     overflow: hidden;
-}
-
-.faq-page:after {
-    content: '\02795';
-    /* Unicode character for "plus" sign (+) */
-    font-size: 13px;
-    color: #777;
-    float: right;
-    margin-left: 5px;
-}
-
-.active:after {
-    content: "\2796";
-    /* Unicode character for "minus" sign (-) */
-}
+    z-index: -1;
+    position: relative;
+    opacity: 0;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease;
+  }
+  
+  .questions:checked ~ .answers{
+    height: auto;
+    opacity: 1;
+    padding: 15px;
+    
+  }
+  
+  /*FAQ Toggle*/
+  .plus {
+    position: absolute;
+    margin-left: 10px;
+    z-index: 5;
+    font-size: 2em;
+    line-height: 100%;
+    -webkit-user-select: none;    
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease;
+  
+  }
+  
+  .questions:checked ~ .plus {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  
+  }
+  
+  .questions {
+    display: none;
+    
+  }  
