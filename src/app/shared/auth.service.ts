@@ -16,7 +16,7 @@ export class AuthService {
         this.router.navigate(['properties']);
     }, err => {
         alert(err.message);
-        this.router.navigate(['/login']);
+        this.router.navigate(['/overview']);
     })
   }
 
@@ -33,7 +33,7 @@ export class AuthService {
   logout(){
     this.fireauth.signOut().then( () => {
       localStorage.removeItem('token'),
-      this.router.navigate(['/login']);
+      this.router.navigate(['/overview']);
     }, err => {
       alert(err.message);
     })
