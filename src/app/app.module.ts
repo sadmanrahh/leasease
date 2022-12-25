@@ -9,15 +9,16 @@ import { LoginComponent } from './component/login/login.component';
 import { RegisterComponent } from './component/register/register.component';
 import { OverviewComponent } from './component/overview/overview.component';
 import { FormsModule } from '@angular/forms';
-import { PropertiesComponent } from './component/properties/properties.component';
-
+import { ContactComponent } from './component/contact/contact.component';
+import { FAQComponent } from './component/faq/faq.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
     OverviewComponent,
-    PropertiesComponent
+    ContactComponent,
+    FAQComponent
   ],
   imports: [
     BrowserModule,
