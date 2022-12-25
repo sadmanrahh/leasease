@@ -9,10 +9,11 @@ export class AuthService {
 
   constructor(private fireauth : AngularFireAuth, private router : Router) { }
 
+  
   login(email : string, password : string) {
     this. fireauth.signInWithEmailAndPassword(email, password).then( () => {
         localStorage.setItem('token', 'true');
-        this.router.navigate(['overview']);
+        this.router.navigate(['properties']);
     }, err => {
         alert(err.message);
         this.router.navigate(['/login']);
