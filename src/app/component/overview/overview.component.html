@@ -15,6 +15,7 @@
 <h1>Lease With Ease</h1>
 
 <div class="container-fluid">
+  
   <div class="row mt-5">
      <div class="col">
      <div class="col-4">
@@ -22,7 +23,7 @@
              <div class="card-body">
               <form>
                   <div class="mb-3">
-                      <h4 class="text-dark text-muted">Login</h4>
+                      <h4 class="text-dark text-muted">Login as Landlord</h4>
                   </div>
                   <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Email</label>
@@ -33,6 +34,7 @@
                     <input type="password" class="form-control" name="password" [(ngModel)]="password">
                   </div>
                   <button type="button" class="btn-info" (click)="login()">Login</button>
+                  
                   <div class="row">
                       <div class="col-md-6">
                           <a href="/register" style="text-decoration: none;">Need Account? <span class="text-danger"></span></a>
@@ -42,10 +44,23 @@
                       </div>
                   </div>
                 </form>
-             </div>
-         </div>
+            </div>
      </div>
      <div class="col"></div>
  </div>
 </div>
 
+
+<div id = "rightbox">
+  <h4 class="text-dark text-muted">Login as Tenant</h4>
+  <div class="row mt-2">
+    <a (click)="signInWithGoogle()" style="text-decoration: none;cursor: pointer;">
+        <div class="card shadow text-center">
+            <div class="card-body">
+                <img src="/assets/google.png" alt="" height="24px" width="24px"> Sign In with Google
+            </div>
+        </div>
+        
+    </a>
+  </div>
+</div>
