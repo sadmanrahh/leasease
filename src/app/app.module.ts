@@ -10,6 +10,7 @@ import { OverviewComponent } from './component/overview/overview.component';
 import { FormsModule } from '@angular/forms';
 import { ContactComponent } from './component/contact/contact.component';
 import { FAQComponent } from './component/faq/faq.component';
+import { SigninComponent } from './component/signin/signin.component';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { FAQComponent } from './component/faq/faq.component';
     OverviewComponent,
     ContactComponent,
     FAQComponent,
+    SigninComponent,
     
   ],
   imports: [
