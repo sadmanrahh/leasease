@@ -7,6 +7,7 @@ import { FAQComponent } from './component/faq/faq.component';
 import { LeaseOptionComponent } from './component/lease-option/lease-option.component';
 import { PropertiesComponent } from './component/properties/properties.component';
 import { VieweditLeaseComponent } from './component/viewedit-lease/viewedit-lease.component';
+import { HeaderTestingComponent } from './component/header-testing/header-testing.component';
 
 const routes: Routes = [
   {path: '', redirectTo:'overview',pathMatch:'full'},
@@ -16,7 +17,8 @@ const routes: Routes = [
   {path: 'contact', component: ContactComponent},
   {path: 'faq', component: FAQComponent},
   {path: 'lease-option', component: LeaseOptionComponent},
-  {path: 'viewedit_lease', component: VieweditLeaseComponent}
+  {path: 'viewedit_lease', component: VieweditLeaseComponent},
+  {path: 'header-testing', component: HeaderTestingComponent}
 ];
 
 @NgModule({

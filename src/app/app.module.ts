@@ -13,6 +13,7 @@ import { FAQComponent } from './component/faq/faq.component';
 import { PropertiesComponent } from './component/properties/properties.component';
 import { LeaseOptionComponent } from './component/lease-option/lease-option.component';
 import { VieweditLeaseComponent } from './component/viewedit-lease/viewedit-lease.component';
+import { HeaderTestingComponent } from './component/header-testing/header-testing.component';
 
 import { getAuth, provideAuth } from '@angular/fire/auth';
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
@@ -29,7 +30,8 @@ import { provideFirestore,getFirestore } from '@angular/fire/firestore';
     FAQComponent,
     PropertiesComponent,
     LeaseOptionComponent,
-    VieweditLeaseComponent
+    VieweditLeaseComponent,
+    HeaderTestingComponent
   ],
 
   imports: [
