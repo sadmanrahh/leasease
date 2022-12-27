@@ -10,7 +10,9 @@ import { OverviewComponent } from './component/overview/overview.component';
 import { FormsModule } from '@angular/forms';
 import { ContactComponent } from './component/contact/contact.component';
 import { FAQComponent } from './component/faq/faq.component';
-import { SigninComponent } from './component/signin/signin.component';
+import { PropertiesComponent } from './component/properties/properties.component';
+import { LeaseOptionComponent } from './component/lease-option/lease-option.component';
+import { VieweditLeaseComponent } from './component/viewedit-lease/viewedit-lease.component';
 
 
 @NgModule({
@@ -20,9 +22,11 @@ import { SigninComponent } from './component/signin/signin.component';
     OverviewComponent,
     ContactComponent,
     FAQComponent,
-    SigninComponent,
-    
+    PropertiesComponent,
+    LeaseOptionComponent,
+    VieweditLeaseComponent
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
