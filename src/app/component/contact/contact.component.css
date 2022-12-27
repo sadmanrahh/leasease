@@ -1,7 +1,8 @@
 *, *:before, *:after {
-  box-sizing: border-box;
+  box-sizing: content-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 body {
@@ -18,10 +19,11 @@ body, button, input {
 .background {
   display: flex;
   min-height: 100vh;
+
 }
 
 .container {
-  flex: 0 1 700px;
+  flex: 0 1 800px;
   margin: auto;
   padding: 10px;
 }
@@ -124,9 +126,19 @@ body, button, input {
   background: #ffffff;
 }
 
-.app-contact {
+.app-email {
   margin-top: auto;
-  font-size: 12px;
+  font-size: 10px;
+  color: rgb(254, 254, 254);
+}
+
+.app-contact {
+  font-size: 10px;
+  color: rgb(254, 254, 254);
+}
+
+.app-address {
+  font-size: 10px;
   color: rgb(254, 254, 254);
 }
 
