@@ -14,6 +14,11 @@ import { PropertiesComponent } from './component/properties/properties.component
 import { LeaseOptionComponent } from './component/lease-option/lease-option.component';
 import { VieweditLeaseComponent } from './component/viewedit-lease/viewedit-lease.component';
 
+import { getAuth, provideAuth } from '@angular/fire/auth';
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
+
+;
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 
 @NgModule({
   declarations: [
@@ -31,9 +36,16 @@ import { VieweditLeaseComponent } from './component/viewedit-lease/viewedit-leas
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
+    provideFirestore(() => getFirestore()),
+    provideAuth(() => getAuth()),
     FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
+
+
+
