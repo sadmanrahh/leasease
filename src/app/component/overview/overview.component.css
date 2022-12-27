@@ -1,3 +1,45 @@
+header {
+  /* background: url('http://www.autodatz.com/wp-content/uploads/2017/05/Old-Car-Wallpapers-Hd-36-with-Old-Car-Wallpapers-Hd.jpg'); */
+	text-align: center;
+	width: 100%;
+	height: 350px;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	overflow: hidden;
+  /* border-radius: 0 0 85% 85% / 30%; */
+  /* background-image: linear-gradient( 135deg, #ff1e00ec 10%, #f3d00f 100%); */
+  background: url('https://i.pinimg.com/originals/cd/eb/4a/cdeb4ac0d29d27a7261cc20ee2f1d312.jpg');
+}
+
+header .overlay{
+	width: 100%;
+	height: 100%;
+  padding-top: 35px;
+	color: #FFF;
+	text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+h1 {
+  font-family: 'Aboreto';
+  font-weight: bold;
+	font-size: 60px;
+  margin-bottom: 30px;
+}
+
+p {
+  font-family: 'Aboreto';
+  font-size: larger;
+  text-align: center;
+  width: 1000px;
+	font-family: 'Open Sans', sans-serif;
+	margin: auto;
+}
+
+/* .overview{
+  background-color: black;
+} */
+
 .container-fluid {
   align-items: center;
   text-align: center;
@@ -14,7 +56,7 @@
   color: #ffffff;
   text-transform: Capitalize;
   text-decoration: none;
-  background: #ed3330;
+  background: #ed3330 ;
   border-radius: 5px;
   display: inline-block;
   border: none;
@@ -23,11 +65,11 @@
 }
 
 .btn-info:hover {
-  background: #434343;
+  background: #000000;
   letter-spacing: 1px;
-  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-  box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+  -webkit-box-shadow: 0px 5px 40px -10px #000000;
+  -moz-box-shadow: 0px 5px 40px -10px #000000;
+  box-shadow: 5px 40px -10px #000000;
   transition: all 0.4s ease 0s;
 }
 
@@ -56,9 +98,9 @@ ul {
 
   overflow: hidden;
 
-  border: 1px solid #e7e7e7;
+  border: 1px solid #000000;
 
-  background-color: rgb(126, 123, 135);
+  background-color: rgb(255, 255, 255);
 
 }
 
@@ -76,7 +118,7 @@ li a {
 
   display: block;
 
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 
   text-align: center;
 
@@ -85,6 +127,8 @@ li a {
   margin-inline: 20px;
 
   text-decoration: none;
+  font-family: 'Aboreto', cursive;
+  font-weight: 600;
 
 }
 
@@ -94,7 +138,7 @@ li a {
 
 li a:hover {
 
-  background-color: #696d69;
+  background-color: #d9d9d9;
 
 }
 
@@ -106,11 +150,7 @@ li a:hover {
 
 }
 
-/* #rightbox{
-  float:right;
-  width:25%;
-  height:280px;
-} */
+
 
 
 

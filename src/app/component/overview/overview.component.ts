@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from 'src/app/shared/auth.service';
 import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-login',
   templateUrl: './overview.component.html',
@@ -11,7 +12,7 @@ export class OverviewComponent implements OnInit {
   email: string = '';
   password: string = '';
 
-  constructor(private auth: AuthService,private router : Router ) {}
+  constructor(private auth: AuthService, private router : Router ) {}
 
   ngOnInit(): void {}
 
