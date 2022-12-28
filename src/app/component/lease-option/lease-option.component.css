@@ -84,11 +84,45 @@ li {
 
 
 
+ul {
+
+  position: fixed;
+
+  text-align: center;
+
+  top: 0;
+
+  width: 100%;
+
+  list-style-type: none;
+
+  margin: 0;
+
+  padding: 0;
+
+  overflow: hidden;
+
+  border: 1px solid #000000;
+
+  background-color: rgb(255, 255, 255);
+
+}
+
+
+
+li {
+
+  display: inline-block;
+
+}
+
+
+
 li a {
 
   display: block;
 
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 
   text-align: center;
 
@@ -108,7 +142,7 @@ li a {
 
 li a:hover {
 
-  background-color: #696d69;
+  background-color: #d9d9d9;
 
 }
 
