@@ -24,10 +24,14 @@
       </div>
   
       <button (click)="saveTutorial()" class="btn btn-success">Submit</button>
+      <button class="btn btn-success" style="margin-left: 90px;" (click)="tenantlist()">List of Tenants</button>
     </div>
   
     <div *ngIf="submitted">
       <h4>You submitted successfully!</h4>
       <button class="btn btn-success" (click)="newTutorial()">Add</button>
+      
     </div>
   </div>
+
+ 
