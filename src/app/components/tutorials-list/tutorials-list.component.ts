@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { TutorialService } from 'src/app/services/tutorial.service';
 import { Tutorial } from 'src/app/models/tutorial.model';
 import { map } from 'rxjs/operators';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tutorials-list',
@@ -14,7 +15,7 @@ export class TutorialsListComponent implements OnInit {
   currentIndex = -1;
   title = '';
 
-  constructor(private tutorialService: TutorialService) { }
+  constructor(private tutorialService: TutorialService, private router : Router) { }
 
   ngOnInit(): void {
     this.retrieveTutorials();
@@ -48,4 +49,17 @@ export class TutorialsListComponent implements OnInit {
       .then(() => this.refreshList())
       .catch(err => console.log(err));
   }
+
+  addnav(): void {
+    this.router.navigate(['/add'])
+
+  }
+
+  
+
+
+
+
+
+
 }

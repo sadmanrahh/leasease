@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Tutorial } from 'src/app/models/tutorial.model';
 import { TutorialService } from 'src/app/services/tutorial.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-add-tutorial',
@@ -12,7 +13,7 @@ export class AddTutorialComponent implements OnInit {
   tutorial: Tutorial = new Tutorial();
   submitted = false;
 
-  constructor(private tutorialService: TutorialService) { }
+  constructor(private tutorialService: TutorialService, private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -27,5 +28,10 @@ export class AddTutorialComponent implements OnInit {
   newTutorial(): void {
     this.submitted = false;
     this.tutorial = new Tutorial();
+  }
+
+  tenantlist(): void {
+    this.router.navigate(['/modify'])
+
   }
 }
