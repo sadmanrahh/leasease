@@ -9,13 +9,12 @@ import { LeaseOptionComponent } from './component/lease-option/lease-option.comp
 import { PropertiesComponent } from './component/properties/properties.component';
 import { VieweditLeaseComponent } from './component/viewedit-lease/viewedit-lease.component';
 
-// import { TutorialsListComponent } from './components/tutorials-list/tutorials-list.component';
-// import { AddTutorialComponent } from './components/add-tutorial/add-tutorial.component';
-import { TenantsListComponent } from './component/properties/components/tenants-list/tenants-list.component';
-import { AddTenantComponent } from './component/properties/components/add-tenant/add-tenant.component';
+import { TutorialsListComponent } from './components/tutorials-list/tutorials-list.component';
+import { AddTutorialComponent } from './components/add-tutorial/add-tutorial.component';
+
 
 const routes: Routes = [
-  {path: '', redirectTo:'tenanats',pathMatch:'full'},
+  {path: '', redirectTo:'tutorials',pathMatch:'full'},
   {path: 'register', component: RegisterComponent},
   {path: 'overview', component: OverviewComponent},
   {path: 'properties', component: PropertiesComponent},
@@ -23,10 +22,8 @@ const routes: Routes = [
   {path: 'faq', component: FAQComponent},
   {path: 'lease-option', component: LeaseOptionComponent},
   {path: 'viewedit_lease', component: VieweditLeaseComponent},
-  // {path: 'tutorials', component: TutorialsListComponent},
-  // {path: 'addTutorial', component: AddTutorialComponent},
-  {path: 'tenants', component: TenantsListComponent},
-  {path: 'add', component:AddTenantComponent}
+  {path: 'tutorials', component: TutorialsListComponent},
+  {path: 'add', component: AddTutorialComponent},
 ];
 
 @NgModule({

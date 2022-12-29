@@ -19,12 +19,9 @@ import { getAuth, provideAuth } from '@angular/fire/auth';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
-// import { AddTutorialComponent } from './components/add-tutorial/add-tutorial.component';
-import { AddTenantComponent } from './component/properties/components/add-tenant/add-tenant.component';
-import { TenantDetailsComponent } from './component/properties/components/tenant-details/tenant-details.component';
-import { TenantsListComponent } from './component/properties/components/tenants-list/tenants-list.component';
-// import { TutorialDetailsComponent } from './components/tutorial-details/tutorial-details.component';
-// import { TutorialsListComponent } from './components/tutorials-list/tutorials-list.component';
+import { AddTutorialComponent } from './components/add-tutorial/add-tutorial.component';
+import { TutorialDetailsComponent } from './components/tutorial-details/tutorial-details.component';
+import { TutorialsListComponent } from './components/tutorials-list/tutorials-list.component';
 
 @NgModule({
   declarations: [
@@ -36,12 +33,9 @@ import { TenantsListComponent } from './component/properties/components/tenants-
     PropertiesComponent,
     LeaseOptionComponent,
     VieweditLeaseComponent,
-    // AddTutorialComponent,
-    AddTenantComponent,
-    TenantDetailsComponent,
-    TenantsListComponent,
-    // TutorialDetailsComponent,
-    // TutorialsListComponent
+    AddTutorialComponent,
+    TutorialDetailsComponent,
+    TutorialsListComponent
   ],
 
   imports: [

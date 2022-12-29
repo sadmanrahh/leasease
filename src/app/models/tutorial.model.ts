@@ -1,6 +1,6 @@
-// export class Tutorial {
-//     key?: string | null;
-//     title?: string;
-//     description?: string;
-//     published?: boolean;
-//   }
+export class Tutorial {
+    key?: string | null;
+    title?: string;
+    description?: string;
+    published?: boolean;
+  }
