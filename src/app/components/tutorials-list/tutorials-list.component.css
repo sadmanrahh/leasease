@@ -65,3 +65,35 @@
     background-color: #d9d9d9;
   
   }
+
+  .main-title{
+    margin-top: 135px;
+    /* font-weight: bold;
+    font-size: 2.5rem; */
+    font-family: 'Aboreto';
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+
+  }
+
+  .showcase-area {
+    height:30vh;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.144),
+        rgba(255, 255, 255, 0.336)
+      ),
+      url("https://www.shutterstock.com/image-vector/city-life-modern-thin-line-260nw-1192281181.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 30px;
+  }
+  
+  .showcase-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+  }

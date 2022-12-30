@@ -1,5 +1,17 @@
 <div class="submit-form">
     <div *ngIf="!submitted">
+
+      <div class="form-group">
+        <label for="address">Address</label>
+        <input
+          class="form-control"
+          id="address"
+          required
+          [(ngModel)]="tutorial.address"
+          name="address"
+        />
+      </div>
+
       <div class="form-group">
         <label for="name">Name</label>
         <input

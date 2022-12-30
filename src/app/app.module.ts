@@ -10,7 +10,6 @@ import { OverviewComponent } from './component/overview/overview.component';
 import { FormsModule } from '@angular/forms';
 import { ContactComponent } from './component/contact/contact.component';
 import { FAQComponent } from './component/faq/faq.component';
-import { PropertiesComponent } from './component/properties/properties.component';
 import { LeaseOptionComponent } from './component/lease-option/lease-option.component';
 import { VieweditLeaseComponent } from './component/viewedit-lease/viewedit-lease.component';
 import { SettingsComponent } from './component/settings/settings.component';
@@ -31,7 +30,6 @@ import { TutorialsListComponent } from './components/tutorials-list/tutorials-li
     OverviewComponent,
     ContactComponent,
     FAQComponent,
-    PropertiesComponent,
     LeaseOptionComponent,
     VieweditLeaseComponent,
     AddTutorialComponent,
