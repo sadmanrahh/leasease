@@ -55,11 +55,4 @@ export class TutorialsListComponent implements OnInit {
 
   }
 
-  
-
-
-
-
-
-
 }
