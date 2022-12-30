@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
+
+
 @Component({
   selector: 'app-lease-option',
   templateUrl: './lease-option.component.html',
@@ -8,11 +10,15 @@ import { Router } from '@angular/router';
 })
 export class LeaseOptionComponent {
 
+
   constructor (private router: Router) {}
+  
 
   viewlease(): void {
     this.router.navigate(['/viewedit_lease'])
   }
+
+
 
 
 
