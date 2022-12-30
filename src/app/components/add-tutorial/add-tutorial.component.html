@@ -1,25 +1,36 @@
 <div class="submit-form">
     <div *ngIf="!submitted">
       <div class="form-group">
-        <label for="title">Title</label>
+        <label for="name">Name</label>
         <input
           type="text"
           class="form-control"
-          id="title"
+          id="name"
           required
-          [(ngModel)]="tutorial.title"
-          name="title"
+          [(ngModel)]="tutorial.name"
+          name="name"
         />
       </div>
   
       <div class="form-group">
-        <label for="description">Description</label>
+        <label for="email">Email</label>
         <input
           class="form-control"
-          id="description"
+          id="email"
           required
-          [(ngModel)]="tutorial.description"
-          name="description"
+          [(ngModel)]="tutorial.email"
+          name="email"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="number">Number</label>
+        <input
+          class="form-control"
+          id="number"
+          required
+          [(ngModel)]="tutorial.number"
+          name="number"
         />
       </div>
   

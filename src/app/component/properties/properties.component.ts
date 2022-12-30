@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-properties',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./properties.component.css']
 })
 export class PropertiesComponent {
+
+  constructor(private router: Router){}
+
+  modify(): void {
+    this.router.navigate(['/modify'])
+  }
 
 }

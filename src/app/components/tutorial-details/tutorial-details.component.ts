@@ -11,9 +11,9 @@ export class TutorialDetailsComponent implements OnInit {
   @Input() tutorial?: Tutorial;
   @Output() refreshList: EventEmitter<any> = new EventEmitter();
   currentTutorial: Tutorial = {
-    title: '',
-    description: '',
-    published: false
+    name: '',
+    email: '',
+    number: ''
   };
   message = '';
 
@@ -28,21 +28,22 @@ export class TutorialDetailsComponent implements OnInit {
     this.currentTutorial = { ...this.tutorial };
   }
 
-  updatePublished(status: boolean): void {
-    if (this.currentTutorial.key) {
-      this.tutorialService.update(this.currentTutorial.key, { published: status })
-      .then(() => {
-        this.currentTutorial.published = status;
-        this.message = 'The status was updated successfully!';
-      })
-      .catch(err => console.log(err));
-    }
-  }
+  // updatePublished(status: boolean): void {
+  //   if (this.currentTutorial.key) {
+  //     this.tutorialService.update(this.currentTutorial.key, { published: status })
+  //     .then(() => {
+  //       this.currentTutorial.published = status;
+  //       this.message = 'The status was updated successfully!';
+  //     })
+  //     .catch(err => console.log(err));
+  //   }
+  // }
 
   updateTutorial(): void {
     const data = {
-      title: this.currentTutorial.title,
-      description: this.currentTutorial.description
+      name: this.currentTutorial.name,
+      email: this.currentTutorial.email,
+      number: this.currentTutorial.number
     };
 
     if (this.currentTutorial.key) {

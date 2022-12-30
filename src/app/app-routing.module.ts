@@ -14,7 +14,7 @@ import { AddTutorialComponent } from './components/add-tutorial/add-tutorial.com
 
 
 const routes: Routes = [
-  {path: '', redirectTo:'modify',pathMatch:'full'},
+  {path: '', redirectTo:'overview',pathMatch:'full'},
   {path: 'register', component: RegisterComponent},
   {path: 'overview', component: OverviewComponent},
   {path: 'properties', component: PropertiesComponent},
