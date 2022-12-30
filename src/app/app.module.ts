@@ -13,6 +13,7 @@ import { FAQComponent } from './component/faq/faq.component';
 import { PropertiesComponent } from './component/properties/properties.component';
 import { LeaseOptionComponent } from './component/lease-option/lease-option.component';
 import { VieweditLeaseComponent } from './component/viewedit-lease/viewedit-lease.component';
+import { SettingsComponent } from './component/settings/settings.component';
 
 import { AngularFireModule } from '@angular/fire/compat';
 import { getAuth, provideAuth } from '@angular/fire/auth';
@@ -35,7 +36,8 @@ import { TutorialsListComponent } from './components/tutorials-list/tutorials-li
     VieweditLeaseComponent,
     AddTutorialComponent,
     TutorialDetailsComponent,
-    TutorialsListComponent
+    TutorialsListComponent,
+    SettingsComponent
   ],
 
   imports: [

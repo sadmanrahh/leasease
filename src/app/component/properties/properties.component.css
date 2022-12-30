@@ -478,7 +478,7 @@ body {
 
 /* ............//// Showcase styling ////......... */
 
-.showcase-area {
+/* .showcase-area {
   height: 50vh;
   background: linear-gradient(
       rgba(240, 240, 240, 0.144),
@@ -488,16 +488,16 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
+} */
 
-.showcase-container {
+/* .showcase-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100%;
   font-size: 1.6rem;
-}
+} */
 
 p{
     color:white;

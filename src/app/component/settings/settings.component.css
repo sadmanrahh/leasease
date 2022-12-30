@@ -1,0 +1,82 @@
+ul {
+  
+    position: fixed;
+  
+    text-align: center;
+  
+    top: 0;
+  
+    width: 100%;
+  
+    list-style-type: none;
+  
+    margin: 0;
+  
+    padding: 0;
+  
+    overflow: hidden;
+  
+    border: 1px solid #e7e7e7;
+  
+    background-color: rgb(126, 123, 135);
+  
+  }
+  
+  
+  
+  li {
+  
+    display: inline-block;
+  
+  }
+  
+  
+  
+  li a {
+  
+    display: block;
+  
+    color: rgb(255, 255, 255);
+  
+    text-align: center;
+  
+    padding: 14px 16px;
+  
+    margin-inline: 20px;
+  
+    text-decoration: none;
+    font-family: 'Aboreto', cursive;
+    font-weight: 600;
+  
+  }
+  
+  
+  
+  /* Change the link color to #111 (black) on hover */
+  
+  li a:hover {
+  
+    background-color: #696d69;
+  
+  }
+
+  .showcase-area {
+    height: 50vh;
+    background: linear-gradient(
+        rgba(240, 240, 240, 0.144),
+        rgba(255, 255, 255, 0.336)
+      ),
+      url("https://vakilsearch.com/blog/wp-content/uploads/2022/05/DRAFTING-SERVICE-AGREEMENT.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .showcase-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 1.6rem;
+  }
