@@ -17,11 +17,16 @@ import { SettingsComponent } from './component/settings/settings.component';
 import { AngularFireModule } from '@angular/fire/compat';
 import { getAuth, provideAuth } from '@angular/fire/auth';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
+import { AngularFireStorageModule } from '@angular/fire/compat/storage';
 
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { AddTutorialComponent } from './components/add-tutorial/add-tutorial.component';
 import { TutorialDetailsComponent } from './components/tutorial-details/tutorial-details.component';
 import { TutorialsListComponent } from './components/tutorials-list/tutorials-list.component';
+import { UploadFormComponent } from './components/upload-form/upload-form.component';
+import { UploadListComponent } from './components/upload-list/upload-list.component';
+import { UploadDetailsComponent } from './components/upload-details/upload-details.component';
+import { UploadleaseComponent } from './component/uploadlease/uploadlease.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +40,11 @@ import { TutorialsListComponent } from './components/tutorials-list/tutorials-li
     AddTutorialComponent,
     TutorialDetailsComponent,
     TutorialsListComponent,
-    SettingsComponent
+    SettingsComponent,
+    UploadFormComponent,
+    UploadListComponent,
+    UploadDetailsComponent,
+    UploadleaseComponent
   ],
 
   imports: [
@@ -45,7 +54,8 @@ import { TutorialsListComponent } from './components/tutorials-list/tutorials-li
     provideFirestore(() => getFirestore()),
     provideAuth(() => getAuth()),
     FormsModule,
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    AngularFireStorageModule
   ],
   providers: [],
   bootstrap: [AppComponent]

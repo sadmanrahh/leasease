@@ -7,6 +7,7 @@ import { ContactComponent } from './component/contact/contact.component';
 import { FAQComponent } from './component/faq/faq.component';
 import { LeaseOptionComponent } from './component/lease-option/lease-option.component';
 import { VieweditLeaseComponent } from './component/viewedit-lease/viewedit-lease.component';
+import { UploadleaseComponent } from './component/uploadlease/uploadlease.component';
 import { SettingsComponent } from './component/settings/settings.component';
 
 import { TutorialsListComponent } from './components/tutorials-list/tutorials-list.component';
@@ -24,6 +25,7 @@ const routes: Routes = [
   {path: 'viewedit_lease', component: VieweditLeaseComponent},
   {path: 'modify', component: TutorialsListComponent},
   {path: 'add', component: AddTutorialComponent},
+  {path: 'upload-lease', component: UploadleaseComponent},
   {path: 'settings', component: SettingsComponent}
 ];
 
