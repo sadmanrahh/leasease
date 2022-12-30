@@ -27,6 +27,7 @@ import { UploadFormComponent } from './components/upload-form/upload-form.compon
 import { UploadListComponent } from './components/upload-list/upload-list.component';
 import { UploadDetailsComponent } from './components/upload-details/upload-details.component';
 import { UploadleaseComponent } from './component/uploadlease/uploadlease.component';
+import { AboutusComponent } from './component/aboutus/aboutus.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { UploadleaseComponent } from './component/uploadlease/uploadlease.compon
     UploadFormComponent,
     UploadListComponent,
     UploadDetailsComponent,
-    UploadleaseComponent
+    UploadleaseComponent,
+    AboutusComponent
   ],
 
   imports: [

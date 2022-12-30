@@ -14,6 +14,7 @@ export class VieweditLeaseComponent implements AfterViewInit {
       path: '../../../assets/lib',
       initialDoc: '../../../assets/Lease_Agreements/Lease Agreement 1.docx'
     }, this.viewerRef.nativeElement).then(instance =>{
+      
 
     })
   }
