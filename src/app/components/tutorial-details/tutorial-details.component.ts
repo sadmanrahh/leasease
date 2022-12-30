@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, OnChanges, Output, EventEmitter } from '@angular/core';
 import { Tutorial } from 'src/app/models/tutorial.model';
 import { TutorialService } from 'src/app/services/tutorial.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tutorial-details',
@@ -18,7 +19,7 @@ export class TutorialDetailsComponent implements OnInit {
   };
   message = '';
 
-  constructor(private tutorialService: TutorialService) { }
+  constructor(private tutorialService: TutorialService, private router: Router) { }
 
   ngOnInit(): void {
     this.message = '';
@@ -65,4 +66,17 @@ export class TutorialDetailsComponent implements OnInit {
         .catch(err => console.log(err));
     }
   }
+
+
+  viewLease() {
+    this.router.navigate(['/viewedit_lease'])
+
+  }
+
+  uploadLease() {
+    this.router.navigate(['/upload-lease'])
+
+  }
+
+
 }
