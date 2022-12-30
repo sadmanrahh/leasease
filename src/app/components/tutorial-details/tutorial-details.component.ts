@@ -11,6 +11,7 @@ export class TutorialDetailsComponent implements OnInit {
   @Input() tutorial?: Tutorial;
   @Output() refreshList: EventEmitter<any> = new EventEmitter();
   currentTutorial: Tutorial = {
+    address: '',
     name: '',
     email: '',
     number: ''
@@ -41,6 +42,7 @@ export class TutorialDetailsComponent implements OnInit {
 
   updateTutorial(): void {
     const data = {
+      address: this.currentTutorial.address,
       name: this.currentTutorial.name,
       email: this.currentTutorial.email,
       number: this.currentTutorial.number
@@ -48,7 +50,7 @@ export class TutorialDetailsComponent implements OnInit {
 
     if (this.currentTutorial.key) {
       this.tutorialService.update(this.currentTutorial.key, data)
-        .then(() => this.message = 'The tutorial was updated successfully!')
+        .then(() => this.message = 'The tenant was updated successfully!')
         .catch(err => console.log(err));
     }
   }
@@ -58,7 +60,7 @@ export class TutorialDetailsComponent implements OnInit {
       this.tutorialService.delete(this.currentTutorial.key)
         .then(() => {
           this.refreshList.emit();
-          this.message = 'The tutorial was updated successfully!';
+          this.message = 'The tenant was updated successfully!';
         })
         .catch(err => console.log(err));
     }
