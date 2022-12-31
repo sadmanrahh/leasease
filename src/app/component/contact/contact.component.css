@@ -18,7 +18,7 @@ body, button, input {
 
 .background {
   display: flex;
-  min-height: 100vh;
+  min-height: 65vh;
 
 }
 
@@ -30,8 +30,11 @@ body, button, input {
 
 .screen {
   position: relative;
-  background: #3e3e3e;
+  /* background-image: linear-gradient( 50deg, #e15845ec 10%, #ffffff 100%);
+  background: url("https://img.freepik.com/premium-photo/red-marble-texture-background-abstract-natural-patterns-design_41389-147.jpg?w=2000"); */
+  background-color: rgb(255, 255, 255);
   border-radius: 15px;
+  
 }
 
 .screen:after {
@@ -51,9 +54,12 @@ body, button, input {
   display: flex;
   align-items: center;
   padding: 10px 20px;
-  background: #4d4d4f;
+  background: #fc5151;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  /* background-image: linear-gradient( 50deg, #e15845ec 10%, #ffffff 100%);
+  background: url("https://img.freepik.com/premium-photo/red-marble-texture-background-abstract-natural-patterns-design_41389-147.jpg?w=2000"); */
+
 }
 
 .screen-header-left {
@@ -90,7 +96,7 @@ body, button, input {
   height: 3px;
   margin-left: 2px;
   border-radius: 8px;
-  background: #999;
+  background: rgb(255, 255, 255);
 }
 
 .screen-body {
@@ -111,8 +117,9 @@ body, button, input {
   display: flex;
   flex-direction: column;
   position: relative;
-  color: #ffffff;
+  color: #000000;
   font-size: 26px;
+  font-weight: bold;
 }
 
 .app-title:after {
@@ -123,23 +130,30 @@ body, button, input {
   bottom: -10px;
   width: 25px;
   height: 4px;
-  background: #ffffff;
+  background: #000000;
 }
 
 .app-email {
-  margin-top: auto;
-  font-size: 10px;
-  color: rgb(254, 254, 254);
+  margin-top: 40px;
+  font-size: 13px;
+  color: rgb(0, 0, 0);
+  
 }
 
 .app-contact {
-  font-size: 10px;
-  color: rgb(254, 254, 254);
+  font-size: 13px;
+  color: rgb(0, 0, 0);
+  
 }
 
 .app-address {
-  font-size: 10px;
-  color: rgb(254, 254, 254);
+  font-size: 13px;
+  color: rgb(0, 0, 0);
+}
+
+.app-postcode {
+  font-size: 13px;
+  color: rgb(0, 0, 0);
 }
 
 .app-form-group {
@@ -166,27 +180,28 @@ body, button, input {
   text-transform: uppercase;
   outline: none;
   transition: border-color .2s;
+  font-weight: 500;
 }
 
 .app-form-control::placeholder {
-  color: #666;
+  color: rgb(0, 0, 0);
 }
 
 .app-form-control:focus {
-  border-bottom-color: #ddd;
+  border-bottom-color: rgb(0, 0, 0);
 }
 
 .app-form-button {
   background: none;
   border: none;
-  color: #ffffff;
+  color: #fc5151;
   font-size: 14px;
   cursor: pointer;
   outline: none;
 }
 
 .app-form-button:hover {
-  color: #ffffff;
+  color: #000000;
 }
 
 .dribbble {
@@ -302,4 +317,34 @@ li a:hover {
 
   background-color: #7cf7ca;
 
+}
+
+.showcase-area {
+  height: 30vh;
+  background: linear-gradient(
+      rgba(240, 240, 240, 0.144),
+      rgba(255, 255, 255, 0.336)
+    ),
+    url("https://img.freepik.com/premium-photo/red-marble-texture-background-abstract-natural-patterns-design_41389-147.jpg?w=2000");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.showcase-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+}
+
+.main-title{
+  margin-top: 150px;
+  /* font-weight: bold;
+  font-size: 2.5rem; */
+  font-family: 'Aboreto';
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 30px;
 }

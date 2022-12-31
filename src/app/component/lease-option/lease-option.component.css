@@ -168,6 +168,7 @@ li a:hover {
   background-position: center;
   background-repeat: no-repeat;
   margin-top: 30px;
+  opacity: 0.8;
 }
 
 .showcase-container {
@@ -179,7 +180,14 @@ li a:hover {
 }
 
 .my-3 {
-  margin-left:600px ;
+  margin-left:700px ;
   width: 600px;
+  margin-top: 200px;
+  
+}
+
+.upload {
+  margin-left: 700px;
+  margin-top: 50px;
 }
 

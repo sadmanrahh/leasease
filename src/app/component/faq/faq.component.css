@@ -166,3 +166,33 @@ body {
     background-color: #7cf7ca;
   
   }
+
+  .showcase-area {
+    height: 30vh;
+    background: linear-gradient(
+        rgba(240, 240, 240, 0.144),
+        rgba(255, 255, 255, 0.336)
+      ),
+      url("https://img.freepik.com/premium-photo/red-marble-texture-background-abstract-natural-patterns-design_41389-147.jpg?w=2000");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .showcase-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+  }
+  
+  .main-title{
+    margin-top: 150px;
+    /* font-weight: bold;
+    font-size: 2.5rem; */
+    font-family: 'Aboreto';
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
