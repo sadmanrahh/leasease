@@ -17,6 +17,16 @@ export class SettingsComponent {
 
 
 
+  contactus(){
+    this.router.navigate(['/contact'])
+    
+  }
+
+  faq(){
+    this.router.navigate(['/faq'])
+    
+  }
+
   logout(){
     this.router.navigate(['/overview'])
     
