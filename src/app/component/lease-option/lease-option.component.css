@@ -191,3 +191,15 @@ li a:hover {
   margin-top: 50px;
 }
 
+.my-2 {
+  width: 600px;
+  justify-content: center;
+  margin-left: 690px;
+}
+
+.my-3 {
+  width: 600px;
+  justify-content: center;
+  margin-left: 690px;
+}
+
