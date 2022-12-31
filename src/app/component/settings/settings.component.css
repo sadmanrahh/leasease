@@ -78,6 +78,7 @@ li a:hover {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    margin-bottom: 150px;
   }
 
   .showcase-container {
@@ -97,11 +98,13 @@ li a:hover {
     text-decoration: none;
     background: #ed3330;
     border-radius: 5px;
-    display: flex;
     border: none;
     transition: all 0.4s ease 0s;
-    margin: auto;
-    margin-top: 100px;
+    flex-direction: row;
+    margin-left: 100px;
+    justify-content: center;
+    width: 150px;
+    
   }
   
   .example_a:hover {
