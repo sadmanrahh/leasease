@@ -58,7 +58,7 @@
       <p>Please click on Tenant...</p>
       <div
       class="list-group-item"
-      *ngFor="let tutorial of tutorials; let i = index"
+      *ngFor="let tutorial of tenants; let i = index"
       [class.active]="i == currentIndex"
       (click)="setActiveTutorial(tutorial, i)"
       >
