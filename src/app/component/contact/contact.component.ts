@@ -7,4 +7,19 @@ import { Component } from '@angular/core';
 })
 export class ContactComponent {
 
+  public showMyMessage = false
+  public dontShowMyMessage = true
+
+  showMessageSoon() {
+  setTimeout(() => {
+    this.showMyMessage = true
+  }, 200)
+
+  setTimeout(() => {
+    this.dontShowMyMessage = false
+  }, 200)
+}
+
+
+
 }
