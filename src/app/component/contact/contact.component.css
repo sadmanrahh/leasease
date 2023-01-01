@@ -46,7 +46,7 @@ body, button, input {
   right: 20px;
   bottom: 0;
   border-radius: 15px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+  box-shadow: 0 20px 40px rgba(255, 3, 3, 0.4);
   z-index: -1;
 }
 
@@ -156,6 +156,11 @@ body, button, input {
   color: rgb(0, 0, 0);
 }
 
+.email-s {
+  font-size: 13px;
+  color: rgb(0, 0, 0);
+}
+
 .app-form-group {
   margin-bottom: 15px;
 }
@@ -174,8 +179,8 @@ body, button, input {
   padding: 10px 0;
   background: none;
   border: none;
-  border-bottom: 1px solid #666;
-  color: #ddd;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
   font-size: 14px;
   text-transform: uppercase;
   outline: none;
