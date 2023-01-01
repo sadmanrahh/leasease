@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./tutorials-list.component.css']
 })
 export class TutorialsListComponent implements OnInit {
-  tutorials?: Tutorial[];
+  tenants?: Tutorial[];
   currentTutorial?: Tutorial;
   currentIndex = -1;
   title = '';
@@ -35,7 +35,7 @@ export class TutorialsListComponent implements OnInit {
         )
       )
     ).subscribe(data => {
-      this.tutorials = data;
+      this.tenants = data;
     });
   }
 

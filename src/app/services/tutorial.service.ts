@@ -7,31 +7,31 @@ import { Tutorial } from '../models/tutorial.model';
 })
 
 export class TutorialService {
-  private dbPath = '/tutorials';
+  private dbPath = '/tenants';
 
-  tutorialsRef: AngularFireList<Tutorial>;
+  tenantsRef: AngularFireList<Tutorial>;
 
   constructor(private db: AngularFireDatabase) {
-    this.tutorialsRef = db.list(this.dbPath);
+    this.tenantsRef = db.list(this.dbPath);
   }
 
   getAll(): AngularFireList<Tutorial> {
-    return this.tutorialsRef;
+    return this.tenantsRef;
   }
 
   create(tutorial: Tutorial): any {
-    return this.tutorialsRef.push(tutorial);
+    return this.tenantsRef.push(tutorial);
   }
 
   update(key: string, value: any): Promise<void> {
-    return this.tutorialsRef.update(key, value);
+    return this.tenantsRef.update(key, value);
   }
 
   delete(key: string): Promise<void> {
-    return this.tutorialsRef.remove(key);
+    return this.tenantsRef.remove(key);
   }
 
   deleteAll(): Promise<void> {
-    return this.tutorialsRef.remove();
+    return this.tenantsRef.remove();
   }
 }
